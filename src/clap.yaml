@@ -1,0 +1,13 @@
+name: hello world
+version: "0.1.0"
+author: Danok21
+about: This is an interesting test！
+settings:
+  - ArgRequiredElseHelp
+args:
+  - config:
+      short: c
+      long: config
+      value_name: FILE
+      about: Sets custom config file
+      takes_value: true
