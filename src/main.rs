@@ -25,3 +25,12 @@ fn main() {
         }
     }
 }
+#[test]
+fn test() {
+//let contents = fs::read_to_string("./filename.txt")
+  let contents = read_text_from_file("./filename.txt")
+        .expect("Something went wrong reading the file");
+    let my_int = contents.parse::<u32>().unwrap();
+	
+	assert-eq!(123, my_int);
+}
